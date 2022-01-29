@@ -1,0 +1,581 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    background-color: #FAF8F7;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+/* Header */
+
+header{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+
+header .batabit-logo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 30px 10px 0px;
+}
+
+header .batabit-logo .text-logo{
+    color: #F7931A;
+    font-size: 2.4rem;
+    font-family: 'Dm Sans', sans-serif;
+    font-weight: bold;
+}
+
+header .batabit-logo .logo{
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+header .text-header{
+    width: 100%;
+    max-width: 575px;
+    margin: 40px auto;
+}
+
+header .text-header .text-1{
+    text-align: center;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin: 0 10px;
+}
+
+header .text-header .text-2{
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    color: #FFE9D5;
+    margin: 20px 10px;
+}
+
+header .button{  
+    color: black;
+    position: absolute; 
+    bottom: -25px; 
+    left: calc(50% - 110px);
+    padding: 15px;
+    font-size: 1.4rem;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+}
+
+header .button .down-arrow{
+    margin: 0 5px;
+}
+
+/* Header */
+
+/* Main */
+
+main  .bitcoin-image{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+main .bitcoin-image img{
+    margin: 50px 0;
+}
+
+main .section-scroll{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 0px 15px;
+
+}
+
+main .section-scroll .exchange-rates_text h2{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main .section-scroll .exchange-rates_text p{
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #757575;
+}
+
+main .section-scroll .card-container{
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+/* ::-webkit-scrollbar{
+    display: none;
+} */
+
+/* Exchange Cards */
+
+main .section-scroll .exchange-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    scroll-snap-align: center;
+}
+
+main .section-scroll .ec1{
+    margin-left: 30px;
+}
+
+main .section-scroll .exchange-card .card-title{
+    margin: 10px 15px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    color: #FF9536;
+}
+
+main .section-scroll .exchange-card .table-crypto{
+    margin: 0 auto;
+    max-width: 200px;
+}
+
+main .section-scroll .exchange-card .table-crypto td{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    padding: 10px 12px;
+    color: #B5B0AC;
+    background-color: #FFFFFF;
+}
+
+main .section-scroll .exchange-card .table-crypto td svg{
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+}
+
+main .section-scroll .exchange-card .table-crypto{
+    width: 100%;
+}
+
+main .section-scroll .exchange-card .table-crypto .table_top-left{
+    border-radius: 8px 0px 0px 0px;
+}
+main .section-scroll .exchange-card .table-crypto .table_top-right{
+    border-radius: 0px 8px 0px 0px;
+}
+main .section-scroll .exchange-card .table-crypto .table_bottom-left{
+    border-radius: 0px 0px 0px 8px;
+}
+main .section-scroll .exchange-card .table-crypto .table_bottom-right{
+    border-radius: 0px 0px 8px 0px;
+}
+
+main .section-scroll .exchange-card .update{
+    width: 175px;
+    text-align: center;
+    background: #FFE9D5;
+    padding: 8px;
+    border-radius: 8px;
+    margin: 10px auto;
+}
+
+main .section-scroll .exchange-card .update p{
+    font-family: 'Inter', sans-serif;
+}
+
+main .section-scroll .exchange-card .update span{
+    font-weight: bold;
+}
+
+main .section-scroll .exchange-card .table-container{
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+}
+
+main .section-scroll .ec2 .card-title{
+    color: #1A9AF7;
+}
+
+main .section-scroll .ec2 .update{
+    background: #E7F5FF;
+}
+
+/* Exchange Cards */
+
+/* Features */
+
+main .features{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 10px;
+    background-color: #201E1C;
+}
+
+main .features svg{
+    width: 70px;
+    position: absolute;
+    top: -20px;
+    left: calc(50% - 25px);
+}
+
+main .features .features_text{
+    text-align: center;
+}
+
+main .features .features_text h3{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding-bottom: 24px;
+}
+
+main .features .features_text p{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.8rem;
+    color: #808080;
+}
+
+/* Features Cards */
+
+main .features .features_cards_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main .features .feature_card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 490px;
+    min-height: 160px;
+    padding: 16px;
+    background-color: #282623;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+    margin: 20px 5px;
+    gap: 15px;
+}
+
+main .features .feature_card img{
+    width: 25px;
+}
+
+main .features .feature_card .feature_card__title{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    color: #FFFFFF;
+}
+
+main .features .feature_card .feature_card__text{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #808080;
+}
+
+/* Img */
+
+main .img-bitcoinBaby{
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 60px;
+}
+
+main .img-bitcoinBaby .img-src{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-image: url(./img/bitcoinbaby\ 2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main .img-bitcoinBaby .img-src p{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    padding-top: 50px;
+    color: #FFFFFF;
+}
+
+/* Price Cards */
+
+main .prices{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+main .prices .prices-text{
+    width: 100%;
+    text-align: center;
+}
+
+main .prices .prices-text .prices_text__title{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+}
+
+main .prices .prices-text .prices_text__subtitle{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #757575;
+    margin-top: 24px;
+    padding: 0 5px;
+}
+
+main .prices .prices-cards_container{
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+main .prices .prices-cards_container .price-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    min-width: 200px;
+    max-width: 225px;
+    margin: 30px 0;
+    padding: 25px;
+    scroll-snap-align: center;
+    background: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+main .prices .prices-cards_container .price-card .recomended{
+    position: absolute;
+    top: -14px;
+    padding: 8px;
+    background:#F7931A;
+    border-radius: 8px;
+}
+
+main .prices .prices-cards_container .price-card .recomended p{
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: #FFFFFF;
+}
+
+main .prices .prices-cards_container .price-card .txt1{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
+main .prices .prices-cards_container .price-card .price{
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 5.2rem;
+    line-height: 6.3rem;
+    letter-spacing: -0.08em;
+    margin: 15px 0;
+}
+
+main .prices .prices-cards_container .price-card .price span{
+    position: absolute;
+    top: 5px;
+    left: -10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+
+main .prices .prices-cards_container .price-card .txt2{
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: #757575;
+}
+
+main .prices .prices-cards_container .price-card .select-price{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    padding: 15px;
+    border: solid 2px #F7931A;
+    border-radius: 4px;
+}
+
+main .prices .prices-cards_container .price-card .select-price p{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+}
+
+main .prices .prices-cards_container .price-card .select-price svg{
+    position: relative;
+    width: 24px;
+    margin-left: 5px;
+}
+
+main .prices .prices-cards_container .pc1{
+    margin-left: 50px;
+}
+
+main .prices .prices-cards_container .pc3{
+    margin-right: 50px;
+}
+
+
+/* Questions */
+
+main .questions{
+    width: 100%;
+    max-width: 375px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+main .questions h3{
+    text-align: center  ;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+    font-weight: bold;
+}
+
+main .questions .question-list{
+    width: 100%;
+    margin: 20px 0;
+}
+
+main .questions .question-list .question-list_item{
+    width: 100%;
+}
+
+main .questions .question-list .question-list_item a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #201E1C;
+}
+
+main .questions .question-list .question-list_item a svg{
+    transform: var(--transform);
+    transition: transform 300ms;
+}
+
+main .questions .question-list .question-list_item .answer{
+    margin: 10px 0;
+    height: 0;
+    overflow: hidden;
+    transition: height 300ms;
+}
+
+main .questions .question-list .question-list_item .answer .answer-item p{
+    width: 250px;
+    margin-left: 10px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #757575;
+}
+
+.answer_active{
+    --transform: rotate(-180deg);
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: #F7931A;
+    padding: 15px 0;
+}
+
+footer .social-media-list .social-media{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #FFFFFF;
+    padding: 5px 0;
+}
+
+footer .batatabit-logo-footer{
+    width: 80px;
+}
+
+@media (min-width: 637px){
+    .prices-cards_container{
+        justify-content: center;
+    }
+    .price-card {
+        min-width: 190px;
+    }
+    .card-container{
+        justify-content: center;
+    }
+}
